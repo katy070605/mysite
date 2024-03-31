@@ -77,14 +77,24 @@ hr{
     height: 100vh;
 }
 
-#button{
+.button{
     padding: 18px;
     text-transform: uppercase;
     background: transparent;
     background-color: transparent;
     border: 2px solid #ffffff;
     color: white;
+    border-radius: 6px;
     margin-top: 26px;
+    backdrop-filter: blur(20px);
+}
+
+.button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.button:active{
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .content{
@@ -147,4 +157,38 @@ hr{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.shape-container{
+    border-radius: 14px;
+    background-color: rgba(255,255,255, 0.4);
+    backdrop-filter: blur(20px);
+    display: inline-block;
+    padding: 46px;
+}
+
+#content{
+    padding-top: 140px;
+    text-align: center;
+}
+
+#calc{
+    width: 360px;
+    display: inline-block;
+    margin-top: 46px;
+    text-align: left;
+    position: relative;
+    left: 4px;
+}
+
+#st1, #st2{
+    height: 42px;
+    width: 490px;
+    margin-bottom: 24px;
+    margin-top: 14px;
+    font-size: 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(32px);
 }
