@@ -141,3 +141,10 @@ hr{
     background-position: center center;
     background-size: cover;
 }
+
+#work-area{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
