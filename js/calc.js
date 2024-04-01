@@ -11,7 +11,9 @@ window.onload = function(){
     testButton = document.querySelector("#testButton");
 
     calcButton.addEventListener("click", button_onClick);
-    testButton.addEventListener("click", beginTest);
+    testButton.addEventListener("click", function(){
+        document.location.href = "../test.html";
+    });
 };
 
 function button_onClick(){
