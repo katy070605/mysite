@@ -1,0 +1,39 @@
+<!-- Лабораторная № 8 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Анкета</title>
+    </head>
+    <body>
+
+        <h2>Анкета</h2>
+
+        <form id="surveyForm">
+            <label for="gender">Стать:</label>
+            <select id="gender" name="gender">
+                <option value="male">Чоловік</option>
+                <option value="female">Жінка</option>
+                <option value="other">Інше</option>
+            </select><br><br>
+
+            <label for="age">Вік:</label>
+            <input type="number" id="age" name="age" min="18" max="100"><br><br>
+
+            <label for="maritalStatus">Сімейний стан:</label>
+            <input type="radio" id="single" name="maritalStatus" value="single">
+            <label for="single">Один</label>
+            <input type="radio" id="married" name="maritalStatus" value="married">
+            <label for="married">Одружений(а)</label>
+            <input type="radio" id="divorced" name="maritalStatus" value="divorced">
+            <label for="divorced">Розведений(а)</label><br><br>
+
+            <label for="country">Країна проживання:</label>
+            <input type="text" id="country" name="country"><br><br>
+
+            <input type="submit" value="Надіслати">
+        </form>
+        <script src="js/survay.js"></script>
+    </body>
+</html>

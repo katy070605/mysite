@@ -1,0 +1,27 @@
+<!-- Лабораторная № 8 -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Електронний магазин</title>
+    </head>
+    <body>
+
+        <h2>Форма замовлення товару</h2>
+
+        <form id="orderForm">
+            <label for="productName">Назва товару:</label>
+            <input type="text" id="productName" name="productName" required><br><br>
+
+            <label for="quantity">Кількість:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+            <label for="price">Ціна за одиницю:</label>
+            <input type="number" id="price" name="price" min="0" step="0.01" required><br><br>
+
+            <input type="submit" value="Надіслати замовлення">
+        </form>
+        <script src="js/order.js"></script>
+    </body>
+</html>
