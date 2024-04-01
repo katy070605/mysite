@@ -10,10 +10,10 @@ document.getElementById("orderForm").addEventListener("submit", function(event) 
     let total = quantity * price;
     
     // Заповнюємо поле "Загальна вартість"
-    document.getElementById("total").value = total.toFixed(2);
+    var value = total.toFixed(2);
   
     // Виводимо зібрані дані
-    alert("Ваше замовлення:\nНазва товару: " + productName + "\nКількість: " + quantity + "\nЦіна за одиницю: " + price.toFixed(2) + "\nЗагальна вартість: " + total.toFixed(2));
+    alert("Ваше замовлення:\nНазва товару: " + productName + "\nКількість: " + quantity + "\nЦіна за одиницю: " + price.toFixed(2) + "\nЗагальна вартість: " + value);
   
     // Можна додати код для відправлення даних на сервер або їх обробки
 });
