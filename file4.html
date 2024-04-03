@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/style.css" /> <!-- Тег link в данном случае используеться для подключения каскадной таблицы стилей.  -->
         
     </head>
-    <body id="rootLayout" style="background: none;">
+    <body id="rootLayout" style="background: none;"> <!-- с помощью стайл отключаем стандартную заставку страницы -->
         <section id="begin">
             <header>
                 <a href="index.html"><img height="80px" width="80px" src="image/back.svg" /></a>
@@ -17,9 +17,9 @@
                 <table id="table">
                     <thead></thead>
                     <tbody>
-                        <tr>
+                        <tr> <!-- Это единственная строчка таблицы -->
                             <!-- Лабораторна № 4 -->
-                            <td id="my-photo" onclick="document.location.href = 'file2.html';"></td>
+                            <td id="my-photo" onclick="document.location.href = 'file2.html';"></td> <!-- этот тег отвечает за отображение фото, так же в нем мы используем джава скрипт что бы перебросить пользователя на другую страницу -->
                             <td class="sidebar">
                                 <h1 id="page-title">Це я!</h1>
                             </td>

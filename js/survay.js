@@ -9,6 +9,4 @@ document.getElementById("surveyForm").addEventListener("submit", function(event)
   
     // Виводимо зібрані дані
     alert("Стать: " + gender + "\nВік: " + age + "\nСімейний стан: " + maritalStatus + "\nКраїна проживання: " + country);
-  
-    // Можна додати код для відправлення даних на сервер або їх обробки
 });

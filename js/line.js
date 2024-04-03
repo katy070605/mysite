@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var line = document.getElementById("line");
-    var isDragging = false;
-    var initialY, initialHeight;
+document.addEventListener("DOMContentLoaded", function() { // вызываем функцию инициализации линии и обьявляем функции для изменения размер с помощью drag & drop
+    var line = document.getElementById("line"); // получим html объект используя его идентификатор после чего присвоем его значение переменной лайн
+    var isDragging = false; 
+    var initialY, initialHeight; // прописываем изначальную кординату по у, прописываем начальную высоту
   
     // Функція для початку перетягування лінії
     function startDrag(e) {

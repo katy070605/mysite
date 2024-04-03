@@ -1,4 +1,4 @@
-document.getElementById("orderForm").addEventListener("submit", function(event) {
+document.getElementById("orderForm").addEventListener("submit", function(event) { // запускаеться когда нажмем на кнопку
     event.preventDefault(); // Забороняємо формі відправлятися на сервер
   
     // Отримуємо значення полів форми
@@ -14,6 +14,4 @@ document.getElementById("orderForm").addEventListener("submit", function(event) 
   
     // Виводимо зібрані дані
     alert("Ваше замовлення:\nНазва товару: " + productName + "\nКількість: " + quantity + "\nЦіна за одиницю: " + price.toFixed(2) + "\nЗагальна вартість: " + value);
-  
-    // Можна додати код для відправлення даних на сервер або їх обробки
 });

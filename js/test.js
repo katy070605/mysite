@@ -1,18 +1,18 @@
-let button;
+let button; // переменная для кнопки пройти тест
 
-window.onload = function(){
+window.onload = function(){ 
     button = document.querySelector("#button");
 
-    button.addEventListener("click", beginTest);
+    button.addEventListener("click", beginTest); // при нажатии на кнопку вызываеться функция beginTest
 };
 
 function beginTest() {
-    try {
+    try { // оператор try позволяет определить блок кода который проверяеться на наличие ошибок во время его выполнения
         var i = 0;
 
         if (confirm("2+2=4?")) { alert("Правильно!"); i++; } else alert("Hi!");
 
-        if (confirm("2+3=6?")) { alert("Правильно!"); i++; } else alert("Ні");
+        if (confirm("2+3=6?")) { alert("НІ!"); i++; } else alert("Правильно");
 
         if (confirm("2+4=6?")) { alert("Правильно!"); i++; } else alert("Hi!");
 
